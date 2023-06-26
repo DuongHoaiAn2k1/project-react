@@ -1,3 +1,3 @@
-const header () {
+var headered() => {
     const a =10
 }
