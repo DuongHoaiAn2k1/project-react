@@ -1,19 +1,15 @@
-import logo from './logo.svg'
+import { useState } from 'react'
 import './App.css'
+import Clock from './Clock'
+import BareInput from './BareInput'
 
 function App() {
+  // const [visible, setVisible] = useState(true)
   return (
     <div className='App'>
-      <h1>Created by An</h1>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+      {/* <button onClick={() => setVisible(false)}>Hide Clock Component</button>
+      {visible && <Clock />} */}
+      <BareInput type='text' value='100' autoFocus className='AnDepTrai' onChange={() => {}} />
     </div>
   )
 }
